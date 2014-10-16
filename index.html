@@ -1,0 +1,272 @@
+<html><head>
+	<meta charset="utf-8">
+	<meta name="apple-itunes-app" content="app-id=324715238">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wikipedia Mobile</title>
+
+	
+	<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;appId=385205984962960&amp;version=v2.0" id="facebook-jssdk"></script>
+	
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+html, body, #content {
+	margin: 0px;
+	height: 100%;
+	font-family: sans-serif;
+	font-weight: lighter;
+	color: #3b3b3b;
+	background-color: #eaeaea;
+	text-align: center;
+	line-height: 1.4;
+}
+#splash {
+	height: 100%;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	max-width: 700px;
+	margin: auto;
+	position: relative;
+}
+@media screen and (min-width: 700px) {
+	#splash > div {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 1em;
+		height: 100%;
+	}
+	#splash #left {
+		text-align: right;
+	}
+	#splash #right {
+		text-align: left;
+	}
+	#splash .iphone {
+		width: 288px;
+		height: 576px;
+	}
+	#screenshots img {
+		max-width: 200px;
+	}
+	#like-container {
+		position: absolute;
+		top: 100%;
+		right: 20px;
+		margin-top: -50px;
+	}
+}
+#chevron {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	margin-top: -2em;
+	color: #3b3b3b;
+	opacity: 0.5;
+	margin-left: -0.5em;
+}
+@media screen and (max-width: 700px) {
+	#chevron {
+		display: none;
+	}
+	#splash .iphone {
+		width: 192px;
+		height: 384px;
+		display: inline-block;
+	}
+	#splash #left {
+		padding: 10px;
+	}
+	#screenshots img {
+		max-width: 100px;
+	}
+	#splash .appstore {
+		display: none;
+	}
+}
+img.appstore {
+	max-width: 120px;
+}
+.iphone {
+	background-image: url('http://app-stop.appspot.com/static/5s.png');
+	background-size: contain;
+	position: relative;
+	width: 720px;
+	height: 1440px;
+}
+.iphone img {
+	position: absolute;
+	top: 17.9%;
+	left: 14%;
+	width: 73%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: normal;
+}
+#icon-row {
+	margin: 30px;
+	margin-top: 40px;
+	margin-bottom: 80px;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	position: relative;
+}
+#icon-row #icon-container {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	border: 10px solid #eaeaea;
+}
+#icon-row img {
+	width: 100%;
+	border-radius: 19px;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+#description {
+	margin: auto;
+	width: 90%;
+	max-width: 600px;
+}
+#screenshots {
+	margin-bottom: 2em;
+}
+#screenshots img {
+	border: 1px solid white;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	margin: 1em;
+}
+#description {
+	white-space: pre-wrap;
+}
+#stars {
+	text-align: center;
+	font-style: italic;
+	font-size: small;
+}
+#stars span {
+	display: block;
+	font-size: 30px;
+	font-style: normal;
+}
+#attribution {
+	font-size: small;
+	padding: 2em;
+}
+#attribution a {
+	color: #3b3b3b;
+}
+</style>
+
+
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style><link href="resource://jid1-mnnxcxisbpnsxq-at-jetpack/privacybadgerfirefox/data/skin/socialwidgets.css" type="text/css" rel="stylesheet"></head>
+<body>
+	<!-- begin Facebook SDK -->
+	<div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="http://static.ak.facebook.com/connect/xd_arbiter/w9JKbyW340G.js?version=41#channel=f35c46a04e8152&amp;origin=http%3A%2F%2Fapp-stop.appspot.com" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" scrolling="no" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0"></iframe><iframe src="https://s-static.ak.facebook.com/connect/xd_arbiter/w9JKbyW340G.js?version=41#channel=f35c46a04e8152&amp;origin=http%3A%2F%2Fapp-stop.appspot.com" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" scrolling="no" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0"></iframe></div></div></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=385205984962960&version=v2.0";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- end Facebook SDK -->
+
+
+	
+<div id="content">
+
+
+<div id="chevron" class="fa fa-chevron-down"></div>
+<div id="splash">
+	<div id="left">
+		<h1>Wikipedia Mobile</h1>
+		<p>Official Wikipedia App for iOS.</p>
+		<a href="https://itunes.apple.com/us/app/wikipedia-mobile/id324715238?mt=8&amp;uo=4"><img class="appstore" src="http://app-stop.appspot.com/static/appstore.svg" alt="Download on the Apple App Store"></a>
+	</div>
+	<div id="right">
+		<div class="iphone">
+			<img src="http://a2.mzstatic.com/us/r30/Purple/v4/ce/cd/7b/cecd7b6c-0db6-be2b-d80e-e735a1577ded/screen1136x1136.jpeg">
+		</div>
+	</div>
+</div>
+
+<div id="icon-row">
+	<div id="icon-container">
+		<img src="http://a1827.phobos.apple.com/us/r30/Purple4/v4/0c/7e/ef/0c7eef13-e834-1582-b23e-5b49fee9c422/mzl.rfkqgozs.png">
+	</div>
+</div>
+
+<div id="screenshots">
+	
+		<img src="http://a2.mzstatic.com/us/r30/Purple/v4/f4/bb/79/f4bb79f0-657f-aa6f-90ef-09cdd80f2c6e/screen1136x1136.jpeg">
+	
+		<img src="http://a2.mzstatic.com/us/r30/Purple3/v4/58/2c/66/582c665a-4b7e-5b33-2034-0b85c46ae792/screen1136x1136.jpeg">
+	
+		<img src="http://a3.mzstatic.com/us/r30/Purple3/v4/a8/50/34/a85034e8-4492-f840-8c8c-74e9da5450ca/screen1136x1136.jpeg">
+	
+		<img src="http://a3.mzstatic.com/us/r30/Purple4/v4/63/ae/b9/63aeb93c-5241-b36c-e3e1-c57ea168150c/screen1136x1136.jpeg">
+	
+</div>
+
+
+
+<p id="description">Official Wikipedia App for iOS. Wikipedia is the free encyclopedia containing more than 32 million articles in 280 languages, and is the most comprehensive and widely used reference work humans have ever compiled. The app has been rewritten from scratch and is better than ever before.
+
+Features:
+
+* Speed, the app is faster than ever.
+
+* Editing both logged in or not.
+
+* Recent pages so you never got lost in the depths of Wikipedia.
+
+* Save pages for offline reading.
+
+* Share articles with others.
+
+* Read articles in a different language.
+
+* Wikipedia Zero, supporting zero-rated access with participating carriers.
+
+The code is 100% open source and community built. If you are a developer and good at Objective-C, then check us out:
+http://git.wikimedia.org/summary/?r=apps/ios/wikipedia.git</p>
+
+<p>
+	<a href="https://itunes.apple.com/us/app/wikipedia-mobile/id324715238?mt=8&amp;uo=4"><img class="appstore" src="http://app-stop.appspot.com/static/appstore.svg" alt="Download on the Apple App Store"></a>
+</p>
+
+<p>
+	</p><div id="like-container"><div fb-iframe-plugin-query="action=like&amp;app_id=385205984962960&amp;href=http%3A%2F%2Fapp-stop.appspot.com%2Fid%2F324715238&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true" fb-xfbml-state="rendered" data-share="true" data-show-faces="true" data-action="like" data-layout="button_count" data-href="http://app-stop.appspot.com/id/324715238" class="fb-like fb_iframe_widget"><span style="vertical-align: bottom; width: 121px; height: 20px;"><iframe class="" src="http://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=385205984962960&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fw9JKbyW340G.js%3Fversion%3D41%23cb%3Df390149984dcac8%26domain%3Dapp-stop.appspot.com%26origin%3Dhttp%253A%252F%252Fapp-stop.appspot.com%252Ff35c46a04e8152%26relation%3Dparent.parent&amp;href=http%3A%2F%2Fapp-stop.appspot.com%2Fid%2F324715238&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: medium none; visibility: visible; width: 121px; height: 20px;" title="fb:like Facebook Social Plugin" scrolling="no" allowtransparency="true" name="f9cf9939174d48" frameborder="0" height="1000px" width="1000px"></iframe></span></div></div>
+	<script>
+	// dynamically create a Facebook like button for the current URL:
+	var like = document.createElement("div");
+	like.className = "fb-like";
+	like.setAttribute("data-href", location.href);
+	like.setAttribute("data-layout", "button_count");
+	like.setAttribute("data-action", "like");
+	like.setAttribute("data-show-faces", "true");
+	like.setAttribute("data-share", "true");
+	document.getElementById("like-container").appendChild(like);
+	</script>
+<p></p>
+
+<p id="copyright">© Wikimedia Foundation </p>
+
+<p id="attribution">
+Landing page created automatically with <a href="http://app-stop.appspot.com">AppStop</a></p>
+
+
+</div>
+
+
+</body></html>
